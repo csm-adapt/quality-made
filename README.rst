@@ -22,10 +22,10 @@ language of choice.** For example, Python docstrings on all functions, classes,
 and modules; or Matlab help text (comment lines) after function, class
 definitions, class properties, etc.
 
-**Code goes in src/, data in data/.** :literal:`src` is
-divided by language to make it easier for people familiar with one language or
-another. If your language isn't there, e.g. ruby or scala, please add it!
-Within each language folder is a folder for common tasks:
+**Code goes in src/.** :literal:`src` is divided by language to make it easier
+for people familiar with one language or another. If your language isn't there,
+e.g. ruby or scala, please add it! Within each language folder is a folder for
+common tasks:
 
 * classification
 
@@ -38,11 +38,15 @@ Within each language folder is a folder for common tasks:
 * visualization
 
 :literal:`scripts` is a place to put more fully developed scripts or jupyter
-notebooks. While there is no `scratch` or `misc`, since that too often becomes
-the catch-all, there may be very legitimate reasons for such folders. However,
-please help your fellow developers by putting your functions/modules in the
-most appropriate folder. If there is another classification that better
-describes your code--please add it.
+notebooks. Since these will often read in data, please place that data in the
+:literal:`scripts/data` folder, so others have the data upon which your script
+depends.
+
+While there is no :literal:`scratch` or :literal:`misc`, since they
+too often become the catch-all, there may be very legitimate reasons for such
+folders. However, please help your fellow developers by putting your
+functions/modules in the most appropriate folder. If there is another
+classification that better describes your code--please add it.
 
 
 Closing Remarks
